@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /digi-book/
+
+# Untuk mengarahkan permintaan langsung ke frontend/index.php jika hanya digi-book/ yang diakses
+RewriteCond %{REQUEST_URI} ^/digi-book/$
+RewriteRule ^(.*)$ frontend/index.php [L]
+
+# Untuk mengarahkan permintaan lainnya ke folder frontend/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ frontend/$1 [L]

@@ -1,0 +1,34 @@
+# Query: admin/fo
+
+15 results - 8 files
+
+frontend\hasil_pencarian.php:
+  187:                                 echo '<a class="play-icon popup-with-zoom-anim" href="single.php?id=' . $data['isbn'] . '"><img src="http://localhost/digi-book/admin/foto/' . $data['photo'] . '" title="album-name" /></a>';
+
+frontend\index.php:
+  75: 							<img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" />
+
+frontend\kategori_pencarian.php:
+  24:                     <a href="single.php?id=' . $data["isbn"] . '"><img src="http://localhost/digi-book/admin/foto/' .  $data["photo"] . '" alt="" /></a>
+
+frontend\reviews.php:
+  107: 										<a href="single.php?id=<?php echo $data['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" /></a>
+  135: 										<a href="single.php?id=<?php echo $data['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" /></a>
+  163: 										<a href="single.php?id=<?php echo $bukuMight['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $bukuMight['photo']; ?>" class="img-responsive" alt=""></a>
+
+frontend\reviews2.php:
+  107: 										<a href="single.php?id=<?php echo $data['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" /></a>
+  135: 										<a href="single.php?id=<?php echo $data['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" /></a>
+  163: 										<a href="single.php?id=<?php echo $bukuMight['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $bukuMight['photo']; ?>" class="img-responsive" alt=""></a>
+
+frontend\single.php:
+   87: 								<a href="single.html"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" /></a>
+  144: 										<a href="single.php?id=<?php echo $data['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" /></a>
+  172: 										<a href="single.php?id=<?php echo $data['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo']; ?>" alt="" /></a>
+  200: 										<a href="single.php?id=<?php echo $bukuMight['isbn'] ?>"><img src="http://localhost/digi-book/admin/foto/<?php echo $bukuMight['photo']; ?>" class="img-responsive" alt=""></a>
+
+frontend\videos.php:
+  134: 								<a class="play-icon popup-with-zoom-anim" href="single.php?id=<?= $data['isbn']; ?>"><img src="http://localhost/digi-book/admin/foto/<?= $data['photo']; ?>" title="album-name" /></a>
+
+Movflx\index.php:
+  433:                                         <a href="movie-details.html"><img src="http://localhost/digi-book/admin/foto/<?php echo $data['photo_film']; ?>" alt=""></a>
